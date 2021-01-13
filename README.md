@@ -13,7 +13,7 @@ The second part is connected to **the control panel on the side of the door**. T
 The last part is a **Java application**, managing HTTP requests, in order to allow the different elements of this project to communicate together. All requests **require authentication** *(different depending on the system)*, in order to verify the **source of the request**.
 
 
-During **an authentication attempt**, on the keypad for example, **a request from ESP8266** is sent to the server. The server **hashes** the composed code and **compares it** with the one in the database. If **a match is found**, it retrieves the user and **incorporates it** into the query response. Also, another request is sent to the Arduino (managing the electric strike) in order to unlock it.
+During **an authentication attempt**, on the keypad for example, **a request from ESP8266** is sent to the server. The server **hashes** the composed code and **compares it** with the one in the database. If **a match is found**, it retrieves the user and **incorporates it** into the query response. Also, another request is sent to the Arduino (managing the electric door lock) in order to unlock it.
 
 **Thus, the screen displays a welcome message with the user's name, and the door is unlocked.**
 
